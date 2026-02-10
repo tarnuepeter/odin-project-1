@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box Practice</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* border: 3px solid red; */
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 150px;
+            background-color: aqua;
+        }
+
+        .first-child {
+            /* background-color: blueviolet; */
+            flex: 1;
+        }
+        .box-mother {
+            padding: 60px 150px;
+            text-align: center;
+        }
+        
+        .box-mother {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .box-holder {
+            max-width: 150px;
+            
+        }
+
+        .box-holder {
+            align-items: center;
+        }
+
+        .box {
+            border: 2px solid orange;
+            height: 150px;
+            width: 150px;
+        }
+
+        div p {
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        ul {
+            padding: 60px 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .foot-text p {
+            flex: 1;
+            justify-self: center;
+        }
+
+        .foot-text {
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-child item">Logo</div>
+        <div class="first-2-child item">Home</div>
+        <div class="second-child item">About</div>
+        <div class="third-child item">Blog</div>
+        <di class="fourth-child item">Contact</div>
+    </div>
+
+    <div class="section-2">
+        <div class="box-mother">
+            <div class="box-holder">
+                <div class="box"></div>
+                <p>Growing up as a kid, there were lot of memorable things that were amazing to watch out for</p>
+            </div>
+            <div class="box-holder">
+                <div class="box"></div>
+                <p>Growing up as a kid, there were lot of memorable things that were amazing to watch out for</p>
+            </div>
+             <div class="box-holder">
+                <div class="box"></div>
+                <p>Growing up as a kid, there were lot of memorable things that were amazing to watch out for</p>
+            </div>
+            <div class="box-holder">
+                <div class="box"></div>
+                <p>Growing up as a kid, there were lot of memorable things that were amazing to watch out for</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="staff">
+            <ul>
+                <li>Moses Kolie</li>
+                <li>John Tarnue</li>
+                <li>Henry Tarnue Jr.</li>
+
+            </ul>
+        </div>
+
+        <div class="foot-text">
+            <p>Copyright © Deptech Solutions 2026</p>
+        </div>
+    </div>
+
+</body>
+</html>
